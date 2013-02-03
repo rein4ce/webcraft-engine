@@ -1,12 +1,12 @@
 webcraft-engine
 ===============
 
+Yet another voxel engine, inspired by popular game Minecraft, but!
+
 DEMO
 ----
 https://dl.dropbox.com/u/11531325/voxel/index.html
 
-
-Yet another voxel engine, inspired by popular game Minecraft, but!
 
 #### 1. Any tile shapes you want, slopes, spikes, stairs etc. ####
 
