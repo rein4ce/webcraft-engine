@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Micro WebGL RPG</title>
+
+    <script src="js/three/three.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/game-shim.js"></script>
+    <script src="js/noise.js"></script>
+    <script src="js/tilemap.js"></script>
+    <script src="js/collision.js"></script>
+    <script src="js/movement.js"></script>
+    <script src="js/tileset.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/engine.js"></script>
+
+    <script src="js/three/shaders/Shaders.js"></script>
+    <script src="js/three/shaders/CopyShader.js"></script>
+    <script src="js/three/loaders/OBJLoader.js"></script>
+    <script src="js/three/postprocessing/EffectComposer.js"></script>
+    <script src="js/three/postprocessing/RenderPass.js"></script>
+    <script src="js/three/postprocessing/BloomPass.js"></script>
+    <script src="js/three/postprocessing/FilmPass.js"></script>
+    <script src="js/three/postprocessing/DotScreenPass.js"></script>
+    <script src="js/three/postprocessing/TexturePass.js"></script>
+    <script src="js/three/postprocessing/ShaderPass.js"></script>
+    <script src="js/three/postprocessing/MaskPass.js"></script>
+    <script src="js/three/shaders/Shaders.js"></script>
+
+    <script>
+        $(function()
+        {
+            Engine.init();
+        });
+    </script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font: 11px Arial;
+        }
+        #wrapper {
+            position: relative;
+            margin: 10px;
+            width: 640px; height: 480px;
+            float: left;
+        }
+        #content {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
+        #gui {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+        }
+        #gui * {
+            pointer-events: none;
+        }
+        #gui .btn {
+            pointer-events: auto;
+        }
+        #gui span {
+            display: inline-block;
+            padding: 3px 6px 3px 6px;
+        }
+        #crosshair {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 17px; height: 17px;
+            background: url("img/crosshair.png");
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+        #weapons {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+        }
+        #weapons > div {
+            border: 2px solid white;
+            margin: 2px;
+            color: white;
+            font-weight: bold;
+            padding: 4px 8px 4px 8px;
+            display: inline-block;
+            opacity: 0.35;
+        }
+        #weapons > div.active {
+            opacity: 1;
+        }
+        #tips {
+            padding-top: 10px;
+        }
+        #tips .key {
+            width: 20px; height: 20px;
+            background: #111;
+            border: 2px solid white;
+            box-shadow: 0px 0px 2px black;
+            border-radius: 7px;
+            text-align: center;
+            font: bold 10px Arial;
+            line-height: 20px;
+            color: white;
+            font-style: italic;
+            float: left;
+            margin: 2px;
+            text-indent: -2px;
+        }
+        #tips span {
+            line-height: 30px;
+            margin-left: 8px;
+        }
+        b {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content" style=" border: 1px solid black;"></div>
+        <div id="gui">
+            <span id="fps-counter"></span>
+            <div id="crosshair"></div>
+            <div id="weapons">
+                <div id="slot1">1 - Delete</div>
+                <div id="slot2">2 - Create</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tips">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <span>Editing mode</span>
+        <br>
+
+        <div class="key">E</div>
+        <span>Delete/Create tile</span>
+        <br>
+
+        <div class="key">Q</div>
+        <span>Rotate tile</span>
+        <br>
+
+        <div class="key">F</div>
+        <span>Toggle fly</span>
+        <br>
+
+        <div class="key" style="width: 50px">SHIFT</div>
+        <span>Run</span>
+        <br>
+
+        <div class="key" style="width: 50px">SPACE</div>
+        <span>Jump</span>
+        <br>
+
+        <div class="key" style="width: 50px">Scroll</div>
+        <span>Change tile</span>
+        <br>
+
+        <div class="key" >F2</div>
+        <span>Save locally <br>(add <b>#your_map_name</b> to the url to load it)</span>
+        <br>
+    </div>
+</body>
+</html>
