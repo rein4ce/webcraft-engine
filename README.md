@@ -17,7 +17,7 @@ This can help make your terrain smoother and interiors look more detailed. All y
 
 Who needs SSAO when you can just bake vertex colors right into the mesh, right? ;) Neat little feature that will improve the overall visuals of your astounding creations!
 
-#### 3. Automatic removal of occlusing faces ####
+#### 3. Automatic removal of occluding faces ####
 
 More tile types = more difficult to intelligently hide occluded faces between them. Fortunately, this engine will automatically detect which ones occlude which, thus giving you most performance possible
 
