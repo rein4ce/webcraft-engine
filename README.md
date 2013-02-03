@@ -25,4 +25,8 @@ More tile types = more difficult to intelligently hide occluded faces between th
 
 No need to deploy anywhere, just fork and play with the code. That is unless you want to permanently store the levels. But there's already a function for that too you can use right away
 
+
+The beautiful tileset used temporarily is PureDBCraft from Sphex, try it at http://bdcraft.net/ !
+
+
 _More coming soon..._
