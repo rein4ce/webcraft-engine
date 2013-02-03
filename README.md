@@ -10,8 +10,8 @@ https://dl.dropbox.com/u/11531325/voxel/index.html
 
 #### 1. Any tile shapes you want, slopes, spikes, stairs etc. ####
 
-That's right, now more pure blocky blocks, now you can use all sorts of tiles you always wanted: slants, railings, spheres, you name it!
-This can help make your terrain smoother and interiors more detailed. All you have to do is model them in your favorite 3d tool (like SketchUp, sample .skp file already supplied) and define how they should look in-game in one simple .js file and there you go!
+That's right, no more pure blocky blocks, now you can use all sorts of tiles you always wanted: slants, railings, spheres, you name it!
+This can help make your terrain smoother and interiors look more detailed. All you have to do is model them in your favorite 3d tool (like SketchUp, sample .skp file already supplied) and define how they should look in-game in one simple .js file and there you go!
 
 #### 2. Baked-in fast ambient occlusion ####
 
@@ -25,4 +25,4 @@ More tile types = more difficult to intelligently hide occluded faces between th
 
 No need to deploy anywhere, just fork and play with the code. That is unless you want to permanently store the levels. But there's already a function for that too you can use right away
 
-More coming soon...
+_More coming soon..._
