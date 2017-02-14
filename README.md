@@ -5,7 +5,7 @@ Yet another voxel engine, inspired by popular game Minecraft, but!
 
 DEMO
 ----
-https://dl.dropbox.com/u/11531325/voxel/index.html
+https://webcraft.updog.co/
 
 
 #### 1. Any tile shapes you want, slopes, spikes, stairs etc. ####
@@ -28,5 +28,3 @@ No need to deploy anywhere, just fork and play with the code. That is unless you
 
 The beautiful tileset used temporarily is PureDBCraft from Sphex, try it at http://bdcraft.net/ !
 
-
-_More coming soon..._
