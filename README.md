@@ -5,7 +5,7 @@ Yet another voxel engine, inspired by popular game Minecraft, but!
 
 DEMO
 ----
-https://webcraft.updog.co/
+https://webcraft-demo.netlify.app/
 
 
 #### 1. Any tile shapes you want, slopes, spikes, stairs etc. ####
